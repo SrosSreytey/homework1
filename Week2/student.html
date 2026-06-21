@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML student Registration</title>
+</head>
+<body>
+   <style>
+    body{
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background-color: #f9f6f6;
+        color: #0e0d0d;
+    }
+    h1{
+     font-size: 26px;
+     font-weight: bold;
+     margin: bottom 20px;
+    }
+    .fileld{
+        margin-bottom: 116px;
+    }
+    label{
+        display: block;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea{
+        width: 100%;
+        max-width: 400px;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    textarea{
+        height: 120px;
+        resize: vertical;
+    }
+    .checkbox-row{
+        display: flex;
+        gap: 8px;
+        margin: 16px 0;
+    }
+    button{
+        display: 10px 24px;
+        font-size: pointer;
+        cursor: pointer;
+        border: 1px solid #333;
+        border: radius 4px ;
+        background-color: #fff;
+    }
+    button:hover{
+        background-color: #f0f0f0;
+    }
+   </style>
+   </head>
+   <body>
+    <h1>Student Registration From</h1>
+    <div  class="field">
+        <table for="fullname">Fullname</table>
+        <input type="text"id="fullname"placeholder="Enter your fullname">
+    </div>
+    <div class="field">
+        <table for="email">Email</table>
+        <input type="text"id="Email"placeholder="Enter you Email">
+    </div>
+    <div>
+        <div class="field">
+        <label for="gender">Gender</label>
+        <select name="text"  id="gender">
+           <option value="">Select option</option>
+           <option >Male</option>
+           <option >Female</option>
+           <option >other</option>
+        </select>
+    </div>
+    <div class="field">
+        <table for="course">Course</table>
+        <select  id="course">
+            <option value="">Select option</option>
+            <option >Computer Science</option>
+            <option >Information Technology</option>
+            <option >Software Engineering</option>
+            <option >Networking</option>
+        </select>
+    </div>
+    <div class="field">
+        <label for="message">message</label>
+        <textarea name="text"  id="message"placeholder="Enter your message..."></textarea>
+    </div>
+    <div class="Checkbox-row">
+        <input type="checkbox" name="" id="agree">
+        <label for="agree" style="font-weight: normal;margin:0;">I agree to class rules</label>
+
+    </div>
+    <button type="button">Submint</button>
+   </body>
+</body>
+</html>
